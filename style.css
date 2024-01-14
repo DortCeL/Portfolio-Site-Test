@@ -1,0 +1,137 @@
+@import url('utilities.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    height: 10vh;
+    background: linear-gradient(rgb(21, 32, 43), rgb(37, 45, 63));
+    color: white;
+    padding: 0px 10%;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.button {
+    padding: 10px 30px;
+    margin: 0px 5px;   
+    cursor: pointer;
+}
+
+ .button:hover {
+    border-bottom: 5px solid rgb(48, 183, 48);
+ }
+
+ .contact {
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #768cdb;
+    border: 3px solid #768cdb;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
+.contact:hover {
+    background: transparent;;
+    color: white;
+    transition: 0.1s;
+}
+
+
+.first {
+    height: 75vh;
+    /* background-color: rgb(50, 48, 53); */
+    background: linear-gradient(rgb(30, 30, 35), rgb(97, 97, 133));
+    color: white;
+    padding: 0px 25%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+
+
+.left img {
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+.left img:hover {
+    transform: scale(1.02);
+    z-index: 2;
+    
+}
+
+.right {
+    padding-left: 70px;
+}
+
+.right h3 {
+    
+}
+
+.right h2 {
+    font-size: 28px;
+    
+    margin: 8px 0px;
+}
+.right h2 span {
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: aqua;
+}
+
+.right p {
+    line-height : 1.4;
+    text-align: justify;
+}
+
+.right button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 3px solid greenyellow;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right button:hover {
+    background: greenyellow;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.second .gallery-container {
+    width: 100%;
+    columns: 4;
+    column-gap: 40px;
+}
+.second .gallery-container .box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.second .gallery-container .box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+@media(max-width: 1200px) {
+    .second .gellery-container {
+        width: calc(100% - 40px);
+        columns : 3;
+    }
+}
